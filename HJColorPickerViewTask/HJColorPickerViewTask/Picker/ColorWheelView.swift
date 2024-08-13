@@ -104,12 +104,25 @@ class ColorWheelView: UIView {
         let isPointOnEdge = distanceToCenter >= radius - 1.0
         return isPointOnEdge
     }
-    
+}
+
+private extension ColorWheelView {
     func commonInit() {
         backgroundColor = .clear
         setupImageView()
     }
-    
+
+    func makeColorWheelImage(radius: CGFloat) -> CIImage? {
+        let filter = CIFilter(name: "CIHueSaturationValueGradient", parameters: [
+            "inputColorSpace": CGColorSpaceCreateDeviceRGB(),
+            "inputDither": 0,
+            "inputRadius": radius,
+            "inputSoftness": 0,
+            "inputValue": 1
+        ])
+        return filter?.outputImage
+    }
+
     func setupImageView() {
         imageView.contentMode = .scaleAspectFit
         imageViewMask.backgroundColor = .black
@@ -125,17 +138,6 @@ class ColorWheelView: UIView {
         ])
     }
 
-    func makeColorWheelImage(radius: CGFloat) -> CIImage? {
-        let filter = CIFilter(name: "CIHueSaturationValueGradient", parameters: [
-            "inputColorSpace": CGColorSpaceCreateDeviceRGB(),
-            "inputDither": 0,
-            "inputRadius": radius,
-            "inputSoftness": 0,
-            "inputValue": 1
-        ])
-        return filter?.outputImage
-    }
-
     func edgeColor(for angle: CGFloat) -> UIColor {
         var normalizedAngle = angle + .pi
         normalizedAngle += (.pi / 2)
@@ -144,4 +146,3 @@ class ColorWheelView: UIView {
         return UIColor(hue: hue, saturation: 1, brightness: 1.0, alpha: 1.0)
     }
 }
-

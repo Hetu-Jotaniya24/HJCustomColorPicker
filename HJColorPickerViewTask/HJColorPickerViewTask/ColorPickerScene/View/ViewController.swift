@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     }
     private let colorPicker = CustomColorPicker()
     private var mover: ColorThumbView!
-    private var selectedColor: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
