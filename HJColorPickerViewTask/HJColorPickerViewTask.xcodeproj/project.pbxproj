@@ -13,6 +13,8 @@
 		E513F7CC2C6BAF270050A914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E513F7CB2C6BAF270050A914 /* Assets.xcassets */; };
 		E513F7CF2C6BAF270050A914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E513F7CD2C6BAF270050A914 /* LaunchScreen.storyboard */; };
 		E513F7D82C6BB7C10050A914 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7D72C6BB7C10050A914 /* Utilities.swift */; };
+		E513F7E02C6BC2FD0050A914 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */; };
+		E513F7E22C6BD0740050A914 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7E12C6BD0740050A914 /* ThemeColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E513F7CE2C6BAF270050A914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E513F7D02C6BAF270050A914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E513F7D72C6BB7C10050A914 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E513F7E12C6BD0740050A914 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				E513F7D02C6BAF270050A914 /* Info.plist */,
 				E513F7D92C6BB7DA0050A914 /* ColorPickerScene */,
 				E513F7DD2C6BB8100050A914 /* Storyboards */,
+				E513F7DE2C6BC2E20050A914 /* Extensions */,
 				E513F7D62C6BB7AC0050A914 /* Utilities */,
 			);
 			path = HJColorPickerViewTask;
@@ -70,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E513F7D72C6BB7C10050A914 /* Utilities.swift */,
+				E513F7E12C6BD0740050A914 /* ThemeColor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -113,6 +119,14 @@
 				E513F7CD2C6BAF270050A914 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E513F7DE2C6BC2E20050A914 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +202,9 @@
 			files = (
 				E513F7D82C6BB7C10050A914 /* Utilities.swift in Sources */,
 				E513F7C72C6BAF250050A914 /* ViewController.swift in Sources */,
+				E513F7E02C6BC2FD0050A914 /* UIView+Extension.swift in Sources */,
 				E513F7C32C6BAF250050A914 /* AppDelegate.swift in Sources */,
+				E513F7E22C6BD0740050A914 /* ThemeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
