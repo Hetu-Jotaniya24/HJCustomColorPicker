@@ -20,5 +20,10 @@ extension UIView {
         layer.shouldRasterize = true
         layer.rasterizationScale = UIScreen.main.scale
     }
+
+    func layoutNow() {
+        setNeedsLayout()
+        layoutIfNeeded()
+    }
 }
 

@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbQ-4k-hDP">
-                                <rect key="frame" x="16" y="84" width="361" height="361"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSC-UL-Pc4">
                                 <rect key="frame" x="16" y="688" width="361" height="120"/>
                                 <subviews>
@@ -130,15 +127,10 @@
                         <constraints>
                             <constraint firstItem="LSC-UL-Pc4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="1Xc-rf-hU0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LSC-UL-Pc4" secondAttribute="bottom" constant="10" id="bUy-To-4sO"/>
-                            <constraint firstItem="zbQ-4k-hDP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fdE-Rc-8df"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LSC-UL-Pc4" secondAttribute="trailing" constant="16" id="gOS-Ch-rKe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbQ-4k-hDP" secondAttribute="trailing" constant="16" id="i5i-HU-sZd"/>
-                            <constraint firstItem="zbQ-4k-hDP" firstAttribute="width" secondItem="zbQ-4k-hDP" secondAttribute="height" multiplier="1:1" id="kMr-qX-Vlc"/>
-                            <constraint firstItem="zbQ-4k-hDP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="rW7-j6-6GJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="colorPicker" destination="zbQ-4k-hDP" id="DZS-Gg-Rm9"/>
                         <outletCollection property="ButtonSegments" destination="X4m-h9-R0c" collectionClass="NSMutableArray" id="xgl-D3-Ain"/>
                         <outletCollection property="ButtonSegments" destination="Zuu-jP-s4m" collectionClass="NSMutableArray" id="KPw-WX-KFB"/>
                         <outletCollection property="ButtonSegments" destination="vVj-S3-Xac" collectionClass="NSMutableArray" id="d1w-CU-mzM"/>

@@ -15,6 +15,10 @@
 		E513F7D82C6BB7C10050A914 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7D72C6BB7C10050A914 /* Utilities.swift */; };
 		E513F7E02C6BC2FD0050A914 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */; };
 		E513F7E22C6BD0740050A914 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7E12C6BD0740050A914 /* ThemeColor.swift */; };
+		E513F7E42C6BDEFC0050A914 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7E32C6BDEFC0050A914 /* UIColor+Extension.swift */; };
+		E513F7E82C6BDFA40050A914 /* CustomColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7E72C6BDFA40050A914 /* CustomColorPicker.swift */; };
+		E513F7EA2C6BDFD90050A914 /* ColorThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7E92C6BDFD90050A914 /* ColorThumbView.swift */; };
+		E513F7EC2C6BE0080050A914 /* ColorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513F7EB2C6BE0080050A914 /* ColorWheelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E513F7D72C6BB7C10050A914 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E513F7E12C6BD0740050A914 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		E513F7E32C6BDEFC0050A914 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E513F7E72C6BDFA40050A914 /* CustomColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPicker.swift; sourceTree = "<group>"; };
+		E513F7E92C6BDFD90050A914 /* ColorThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThumbView.swift; sourceTree = "<group>"; };
+		E513F7EB2C6BE0080050A914 /* ColorWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				E513F7D02C6BAF270050A914 /* Info.plist */,
 				E513F7D92C6BB7DA0050A914 /* ColorPickerScene */,
 				E513F7DD2C6BB8100050A914 /* Storyboards */,
+				E513F7E52C6BDF730050A914 /* Picker */,
 				E513F7DE2C6BC2E20050A914 /* Extensions */,
 				E513F7D62C6BB7AC0050A914 /* Utilities */,
 			);
@@ -125,8 +134,19 @@
 			isa = PBXGroup;
 			children = (
 				E513F7DF2C6BC2FD0050A914 /* UIView+Extension.swift */,
+				E513F7E32C6BDEFC0050A914 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E513F7E52C6BDF730050A914 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				E513F7E72C6BDFA40050A914 /* CustomColorPicker.swift */,
+				E513F7E92C6BDFD90050A914 /* ColorThumbView.swift */,
+				E513F7EB2C6BE0080050A914 /* ColorWheelView.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E513F7EC2C6BE0080050A914 /* ColorWheelView.swift in Sources */,
 				E513F7D82C6BB7C10050A914 /* Utilities.swift in Sources */,
+				E513F7EA2C6BDFD90050A914 /* ColorThumbView.swift in Sources */,
 				E513F7C72C6BAF250050A914 /* ViewController.swift in Sources */,
 				E513F7E02C6BC2FD0050A914 /* UIView+Extension.swift in Sources */,
+				E513F7E42C6BDEFC0050A914 /* UIColor+Extension.swift in Sources */,
 				E513F7C32C6BAF250050A914 /* AppDelegate.swift in Sources */,
 				E513F7E22C6BD0740050A914 /* ThemeColor.swift in Sources */,
+				E513F7E82C6BDFA40050A914 /* CustomColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
